@@ -18,6 +18,31 @@
 		6E5A116A22272A3D00435263 /* tieraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A116922272A3D00435263 /* tieraTests.swift */; };
 		6E5A117522272A3D00435263 /* tieraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A117422272A3D00435263 /* tieraUITests.swift */; };
 		6E5A118322272E5100435263 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A118222272E5100435263 /* CHANGELOG.md */; };
+		6E5A11922227318400435263 /* tieraModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11892227318400435263 /* tieraModel.framework */; };
+		6E5A11992227318400435263 /* tieraModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A11982227318400435263 /* tieraModelTests.swift */; };
+		6E5A119B2227318400435263 /* tieraModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E5A118B2227318400435263 /* tieraModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E5A119E2227318400435263 /* tieraModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11892227318400435263 /* tieraModel.framework */; };
+		6E5A119F2227318400435263 /* tieraModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11892227318400435263 /* tieraModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E5A11B5222731A100435263 /* tieraView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11AC222731A100435263 /* tieraView.framework */; };
+		6E5A11BC222731A100435263 /* tieraViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A11BB222731A100435263 /* tieraViewTests.swift */; };
+		6E5A11BE222731A100435263 /* tieraView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E5A11AE222731A100435263 /* tieraView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E5A11C1222731A100435263 /* tieraView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11AC222731A100435263 /* tieraView.framework */; };
+		6E5A11C2222731A100435263 /* tieraView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11AC222731A100435263 /* tieraView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E5A11D7222731C300435263 /* tieraViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11CE222731C300435263 /* tieraViewModel.framework */; };
+		6E5A11DE222731C300435263 /* tieraViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A11DD222731C300435263 /* tieraViewModelTests.swift */; };
+		6E5A11E0222731C300435263 /* tieraViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E5A11D0222731C300435263 /* tieraViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E5A11E3222731C300435263 /* tieraViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11CE222731C300435263 /* tieraViewModel.framework */; };
+		6E5A11E4222731C300435263 /* tieraViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11CE222731C300435263 /* tieraViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E5A11F9222731EA00435263 /* tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; };
+		6E5A1200222731EA00435263 /* tieraCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A11FF222731EA00435263 /* tieraCommonTests.swift */; };
+		6E5A1202222731EA00435263 /* tieraCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E5A11F2222731EA00435263 /* tieraCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E5A1205222731EA00435263 /* tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; };
+		6E5A1206222731EA00435263 /* tieraCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E5A12102227350200435263 /* tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; };
+		6E5A12152227352000435263 /* tieraModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11892227318400435263 /* tieraModel.framework */; };
+		6E5A12162227352400435263 /* tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; };
+		6E5A121B2227354200435263 /* tieraViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11CE222731C300435263 /* tieraViewModel.framework */; };
+		6E5A121C2227354600435263 /* tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; };
 		779B3560C649AB9EDE92193C /* Pods_tieraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD324286AD6CF2D33C62D963 /* Pods_tieraTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +61,143 @@
 			remoteGlobalIDString = 6E5A114D22272A3B00435263;
 			remoteInfo = tiera;
 		};
+		6E5A11932227318400435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11882227318400435263;
+			remoteInfo = tieraModel;
+		};
+		6E5A11952227318400435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A114D22272A3B00435263;
+			remoteInfo = tiera;
+		};
+		6E5A119C2227318400435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11882227318400435263;
+			remoteInfo = tieraModel;
+		};
+		6E5A11B6222731A100435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11AB222731A100435263;
+			remoteInfo = tieraView;
+		};
+		6E5A11B8222731A100435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A114D22272A3B00435263;
+			remoteInfo = tiera;
+		};
+		6E5A11BF222731A100435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11AB222731A100435263;
+			remoteInfo = tieraView;
+		};
+		6E5A11D8222731C300435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11CD222731C300435263;
+			remoteInfo = tieraViewModel;
+		};
+		6E5A11DA222731C300435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A114D22272A3B00435263;
+			remoteInfo = tiera;
+		};
+		6E5A11E1222731C300435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11CD222731C300435263;
+			remoteInfo = tieraViewModel;
+		};
+		6E5A11FA222731EA00435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11EF222731EA00435263;
+			remoteInfo = tieraCommon;
+		};
+		6E5A11FC222731EA00435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A114D22272A3B00435263;
+			remoteInfo = tiera;
+		};
+		6E5A1203222731EA00435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11EF222731EA00435263;
+			remoteInfo = tieraCommon;
+		};
+		6E5A120E222734F100435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11EF222731EA00435263;
+			remoteInfo = tieraCommon;
+		};
+		6E5A12112227351500435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11882227318400435263;
+			remoteInfo = tieraModel;
+		};
+		6E5A12132227351900435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11EF222731EA00435263;
+			remoteInfo = tieraCommon;
+		};
+		6E5A12172227353600435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11CD222731C300435263;
+			remoteInfo = tieraViewModel;
+		};
+		6E5A12192227353A00435263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5A114622272A3B00435263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5A11EF222731EA00435263;
+			remoteInfo = tieraCommon;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E5A11A52227318400435263 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E5A119F2227318400435263 /* tieraModel.framework in Embed Frameworks */,
+				6E5A11E4222731C300435263 /* tieraViewModel.framework in Embed Frameworks */,
+				6E5A11C2222731A100435263 /* tieraView.framework in Embed Frameworks */,
+				6E5A1206222731EA00435263 /* tieraCommon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		017B452D5F000ABABB295DDB /* Pods-tiera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiera.release.xcconfig"; path = "Pods/Target Support Files/Pods-tiera/Pods-tiera.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +218,30 @@
 		6E5A117422272A3D00435263 /* tieraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tieraUITests.swift; sourceTree = "<group>"; };
 		6E5A117622272A3D00435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5A118222272E5100435263 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		6E5A11892227318400435263 /* tieraModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tieraModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A118B2227318400435263 /* tieraModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tieraModel.h; sourceTree = "<group>"; };
+		6E5A118C2227318400435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A11912227318400435263 /* tieraModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tieraModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A11982227318400435263 /* tieraModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tieraModelTests.swift; sourceTree = "<group>"; };
+		6E5A119A2227318400435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A11AC222731A100435263 /* tieraView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tieraView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A11AE222731A100435263 /* tieraView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tieraView.h; sourceTree = "<group>"; };
+		6E5A11AF222731A100435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A11B4222731A100435263 /* tieraViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tieraViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A11BB222731A100435263 /* tieraViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tieraViewTests.swift; sourceTree = "<group>"; };
+		6E5A11BD222731A100435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A11CE222731C300435263 /* tieraViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tieraViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A11D0222731C300435263 /* tieraViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tieraViewModel.h; sourceTree = "<group>"; };
+		6E5A11D1222731C300435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A11D6222731C300435263 /* tieraViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tieraViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A11DD222731C300435263 /* tieraViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tieraViewModelTests.swift; sourceTree = "<group>"; };
+		6E5A11DF222731C300435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A11F0222731EA00435263 /* tieraCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tieraCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A11F2222731EA00435263 /* tieraCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tieraCommon.h; sourceTree = "<group>"; };
+		6E5A11F3222731EA00435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A11F8222731EA00435263 /* tieraCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tieraCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5A11FF222731EA00435263 /* tieraCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tieraCommonTests.swift; sourceTree = "<group>"; };
+		6E5A1201222731EA00435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E564A1C3F447D643144F9E /* Pods-tieraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraTests/Pods-tieraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9ECB2723BC8C18FC47E367F /* Pods_tieraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7A07A85B3F29FCDA08EA34 /* Pods_tiera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tiera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +255,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5A11C1222731A100435263 /* tieraView.framework in Frameworks */,
+				6E5A11E3222731C300435263 /* tieraViewModel.framework in Frameworks */,
+				6E5A1205222731EA00435263 /* tieraCommon.framework in Frameworks */,
+				6E5A119E2227318400435263 /* tieraModel.framework in Frameworks */,
 				5F5FE2C8F065CC70EE7835B9 /* Pods_tiera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +279,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E5A11862227318400435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A12102227350200435263 /* tieraCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A118E2227318400435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11922227318400435263 /* tieraModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11A9222731A100435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A121C2227354600435263 /* tieraCommon.framework in Frameworks */,
+				6E5A121B2227354200435263 /* tieraViewModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11B1222731A100435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11B5222731A100435263 /* tieraView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11CB222731C300435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A12162227352400435263 /* tieraCommon.framework in Frameworks */,
+				6E5A12152227352000435263 /* tieraModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11D3222731C300435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11D7222731C300435263 /* tieraViewModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11ED222731EA00435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11F5222731EA00435263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11F9222731EA00435263 /* tieraCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,8 +352,11 @@
 			children = (
 				6E5A118222272E5100435263 /* CHANGELOG.md */,
 				6E5A115022272A3B00435263 /* tiera */,
-				6E5A116822272A3D00435263 /* tieraTests */,
-				6E5A117322272A3D00435263 /* tieraUITests */,
+				6E5A11F1222731EA00435263 /* tieraCommon */,
+				6E5A118A2227318400435263 /* tieraModel */,
+				6E5A11CF222731C300435263 /* tieraViewModel */,
+				6E5A11AD222731A100435263 /* tieraView */,
+				6E5A120D2227322D00435263 /* Tests */,
 				6E5A114F22272A3B00435263 /* Products */,
 				B97B0FB2A7C3DE4A70DB002B /* Pods */,
 				8DEE3B8CF5E680A7B89F6BC2 /* Frameworks */,
@@ -112,6 +369,14 @@
 				6E5A114E22272A3B00435263 /* tiera.app */,
 				6E5A116522272A3D00435263 /* tieraTests.xctest */,
 				6E5A117022272A3D00435263 /* tieraUITests.xctest */,
+				6E5A11892227318400435263 /* tieraModel.framework */,
+				6E5A11912227318400435263 /* tieraModelTests.xctest */,
+				6E5A11AC222731A100435263 /* tieraView.framework */,
+				6E5A11B4222731A100435263 /* tieraViewTests.xctest */,
+				6E5A11CE222731C300435263 /* tieraViewModel.framework */,
+				6E5A11D6222731C300435263 /* tieraViewModelTests.xctest */,
+				6E5A11F0222731EA00435263 /* tieraCommon.framework */,
+				6E5A11F8222731EA00435263 /* tieraCommonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +413,91 @@
 			path = tieraUITests;
 			sourceTree = "<group>";
 		};
+		6E5A118A2227318400435263 /* tieraModel */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A118B2227318400435263 /* tieraModel.h */,
+				6E5A118C2227318400435263 /* Info.plist */,
+			);
+			path = tieraModel;
+			sourceTree = "<group>";
+		};
+		6E5A11972227318400435263 /* tieraModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A11982227318400435263 /* tieraModelTests.swift */,
+				6E5A119A2227318400435263 /* Info.plist */,
+			);
+			path = tieraModelTests;
+			sourceTree = "<group>";
+		};
+		6E5A11AD222731A100435263 /* tieraView */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A11AE222731A100435263 /* tieraView.h */,
+				6E5A11AF222731A100435263 /* Info.plist */,
+			);
+			path = tieraView;
+			sourceTree = "<group>";
+		};
+		6E5A11BA222731A100435263 /* tieraViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A11BB222731A100435263 /* tieraViewTests.swift */,
+				6E5A11BD222731A100435263 /* Info.plist */,
+			);
+			path = tieraViewTests;
+			sourceTree = "<group>";
+		};
+		6E5A11CF222731C300435263 /* tieraViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A11D0222731C300435263 /* tieraViewModel.h */,
+				6E5A11D1222731C300435263 /* Info.plist */,
+			);
+			path = tieraViewModel;
+			sourceTree = "<group>";
+		};
+		6E5A11DC222731C300435263 /* tieraViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A11DD222731C300435263 /* tieraViewModelTests.swift */,
+				6E5A11DF222731C300435263 /* Info.plist */,
+			);
+			path = tieraViewModelTests;
+			sourceTree = "<group>";
+		};
+		6E5A11F1222731EA00435263 /* tieraCommon */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A11F2222731EA00435263 /* tieraCommon.h */,
+				6E5A11F3222731EA00435263 /* Info.plist */,
+			);
+			path = tieraCommon;
+			sourceTree = "<group>";
+		};
+		6E5A11FE222731EA00435263 /* tieraCommonTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A11FF222731EA00435263 /* tieraCommonTests.swift */,
+				6E5A1201222731EA00435263 /* Info.plist */,
+			);
+			path = tieraCommonTests;
+			sourceTree = "<group>";
+		};
+		6E5A120D2227322D00435263 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A116822272A3D00435263 /* tieraTests */,
+				6E5A117322272A3D00435263 /* tieraUITests */,
+				6E5A11FE222731EA00435263 /* tieraCommonTests */,
+				6E5A11972227318400435263 /* tieraModelTests */,
+				6E5A11DC222731C300435263 /* tieraViewModelTests */,
+				6E5A11BA222731A100435263 /* tieraViewTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		8DEE3B8CF5E680A7B89F6BC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +523,41 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6E5A11842227318400435263 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A119B2227318400435263 /* tieraModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11A7222731A100435263 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11BE222731A100435263 /* tieraView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11C9222731C300435263 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11E0222731C300435263 /* tieraViewModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11EB222731EA00435263 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A1202222731EA00435263 /* tieraCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6E5A114D22272A3B00435263 /* tiera */ = {
 			isa = PBXNativeTarget;
@@ -183,10 +568,15 @@
 				6E5A114B22272A3B00435263 /* Frameworks */,
 				6E5A114C22272A3B00435263 /* Resources */,
 				321391EBAB4A6D547D89184B /* [CP] Embed Pods Frameworks */,
+				6E5A11A52227318400435263 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6E5A119D2227318400435263 /* PBXTargetDependency */,
+				6E5A11C0222731A100435263 /* PBXTargetDependency */,
+				6E5A11E2222731C300435263 /* PBXTargetDependency */,
+				6E5A1204222731EA00435263 /* PBXTargetDependency */,
 			);
 			name = tiera;
 			productName = tiera;
@@ -231,6 +621,159 @@
 			productReference = 6E5A117022272A3D00435263 /* tieraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6E5A11882227318400435263 /* tieraModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A11A42227318400435263 /* Build configuration list for PBXNativeTarget "tieraModel" */;
+			buildPhases = (
+				6E5A11842227318400435263 /* Headers */,
+				6E5A11852227318400435263 /* Sources */,
+				6E5A11862227318400435263 /* Frameworks */,
+				6E5A11872227318400435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5A120F222734F100435263 /* PBXTargetDependency */,
+			);
+			name = tieraModel;
+			productName = tieraModel;
+			productReference = 6E5A11892227318400435263 /* tieraModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E5A11902227318400435263 /* tieraModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A11A62227318400435263 /* Build configuration list for PBXNativeTarget "tieraModelTests" */;
+			buildPhases = (
+				6E5A118D2227318400435263 /* Sources */,
+				6E5A118E2227318400435263 /* Frameworks */,
+				6E5A118F2227318400435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5A11942227318400435263 /* PBXTargetDependency */,
+				6E5A11962227318400435263 /* PBXTargetDependency */,
+			);
+			name = tieraModelTests;
+			productName = tieraModelTests;
+			productReference = 6E5A11912227318400435263 /* tieraModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E5A11AB222731A100435263 /* tieraView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A11C3222731A100435263 /* Build configuration list for PBXNativeTarget "tieraView" */;
+			buildPhases = (
+				6E5A11A7222731A100435263 /* Headers */,
+				6E5A11A8222731A100435263 /* Sources */,
+				6E5A11A9222731A100435263 /* Frameworks */,
+				6E5A11AA222731A100435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5A121A2227353A00435263 /* PBXTargetDependency */,
+				6E5A12182227353600435263 /* PBXTargetDependency */,
+			);
+			name = tieraView;
+			productName = tieraView;
+			productReference = 6E5A11AC222731A100435263 /* tieraView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E5A11B3222731A100435263 /* tieraViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A11C6222731A100435263 /* Build configuration list for PBXNativeTarget "tieraViewTests" */;
+			buildPhases = (
+				6E5A11B0222731A100435263 /* Sources */,
+				6E5A11B1222731A100435263 /* Frameworks */,
+				6E5A11B2222731A100435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5A11B7222731A100435263 /* PBXTargetDependency */,
+				6E5A11B9222731A100435263 /* PBXTargetDependency */,
+			);
+			name = tieraViewTests;
+			productName = tieraViewTests;
+			productReference = 6E5A11B4222731A100435263 /* tieraViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E5A11CD222731C300435263 /* tieraViewModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A11E5222731C300435263 /* Build configuration list for PBXNativeTarget "tieraViewModel" */;
+			buildPhases = (
+				6E5A11C9222731C300435263 /* Headers */,
+				6E5A11CA222731C300435263 /* Sources */,
+				6E5A11CB222731C300435263 /* Frameworks */,
+				6E5A11CC222731C300435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5A12142227351900435263 /* PBXTargetDependency */,
+				6E5A12122227351500435263 /* PBXTargetDependency */,
+			);
+			name = tieraViewModel;
+			productName = tieraViewModel;
+			productReference = 6E5A11CE222731C300435263 /* tieraViewModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E5A11D5222731C300435263 /* tieraViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A11E8222731C300435263 /* Build configuration list for PBXNativeTarget "tieraViewModelTests" */;
+			buildPhases = (
+				6E5A11D2222731C300435263 /* Sources */,
+				6E5A11D3222731C300435263 /* Frameworks */,
+				6E5A11D4222731C300435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5A11D9222731C300435263 /* PBXTargetDependency */,
+				6E5A11DB222731C300435263 /* PBXTargetDependency */,
+			);
+			name = tieraViewModelTests;
+			productName = tieraViewModelTests;
+			productReference = 6E5A11D6222731C300435263 /* tieraViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E5A11EF222731EA00435263 /* tieraCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A1207222731EA00435263 /* Build configuration list for PBXNativeTarget "tieraCommon" */;
+			buildPhases = (
+				6E5A11EB222731EA00435263 /* Headers */,
+				6E5A11EC222731EA00435263 /* Sources */,
+				6E5A11ED222731EA00435263 /* Frameworks */,
+				6E5A11EE222731EA00435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tieraCommon;
+			productName = tieraCommon;
+			productReference = 6E5A11F0222731EA00435263 /* tieraCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E5A11F7222731EA00435263 /* tieraCommonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E5A120A222731EA00435263 /* Build configuration list for PBXNativeTarget "tieraCommonTests" */;
+			buildPhases = (
+				6E5A11F4222731EA00435263 /* Sources */,
+				6E5A11F5222731EA00435263 /* Frameworks */,
+				6E5A11F6222731EA00435263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E5A11FB222731EA00435263 /* PBXTargetDependency */,
+				6E5A11FD222731EA00435263 /* PBXTargetDependency */,
+			);
+			name = tieraCommonTests;
+			productName = tieraCommonTests;
+			productReference = 6E5A11F8222731EA00435263 /* tieraCommonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,6 +795,34 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 6E5A114D22272A3B00435263;
 					};
+					6E5A11882227318400435263 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6E5A11902227318400435263 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E5A114D22272A3B00435263;
+					};
+					6E5A11AB222731A100435263 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6E5A11B3222731A100435263 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E5A114D22272A3B00435263;
+					};
+					6E5A11CD222731C300435263 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6E5A11D5222731C300435263 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E5A114D22272A3B00435263;
+					};
+					6E5A11EF222731EA00435263 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6E5A11F7222731EA00435263 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E5A114D22272A3B00435263;
+					};
 				};
 			};
 			buildConfigurationList = 6E5A114922272A3B00435263 /* Build configuration list for PBXProject "tiera" */;
@@ -268,8 +839,16 @@
 			projectRoot = "";
 			targets = (
 				6E5A114D22272A3B00435263 /* tiera */,
+				6E5A11EF222731EA00435263 /* tieraCommon */,
+				6E5A11882227318400435263 /* tieraModel */,
+				6E5A11CD222731C300435263 /* tieraViewModel */,
+				6E5A11AB222731A100435263 /* tieraView */,
 				6E5A116422272A3D00435263 /* tieraTests */,
 				6E5A116F22272A3D00435263 /* tieraUITests */,
+				6E5A11902227318400435263 /* tieraModelTests */,
+				6E5A11B3222731A100435263 /* tieraViewTests */,
+				6E5A11D5222731C300435263 /* tieraViewModelTests */,
+				6E5A11F7222731EA00435263 /* tieraCommonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +873,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6E5A116E22272A3D00435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11872227318400435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A118F2227318400435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11AA222731A100435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11B2222731A100435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11CC222731C300435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11D4222731C300435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11EE222731EA00435263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11F6222731EA00435263 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -420,6 +1055,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E5A11852227318400435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A118D2227318400435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11992227318400435263 /* tieraModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11A8222731A100435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11B0222731A100435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11BC222731A100435263 /* tieraViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11CA222731C300435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11D2222731C300435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A11DE222731C300435263 /* tieraViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11EC222731EA00435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E5A11F4222731EA00435263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5A1200222731EA00435263 /* tieraCommonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -432,6 +1127,91 @@
 			isa = PBXTargetDependency;
 			target = 6E5A114D22272A3B00435263 /* tiera */;
 			targetProxy = 6E5A117122272A3D00435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11942227318400435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11882227318400435263 /* tieraModel */;
+			targetProxy = 6E5A11932227318400435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11962227318400435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A114D22272A3B00435263 /* tiera */;
+			targetProxy = 6E5A11952227318400435263 /* PBXContainerItemProxy */;
+		};
+		6E5A119D2227318400435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11882227318400435263 /* tieraModel */;
+			targetProxy = 6E5A119C2227318400435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11B7222731A100435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11AB222731A100435263 /* tieraView */;
+			targetProxy = 6E5A11B6222731A100435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11B9222731A100435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A114D22272A3B00435263 /* tiera */;
+			targetProxy = 6E5A11B8222731A100435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11C0222731A100435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11AB222731A100435263 /* tieraView */;
+			targetProxy = 6E5A11BF222731A100435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11D9222731C300435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11CD222731C300435263 /* tieraViewModel */;
+			targetProxy = 6E5A11D8222731C300435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11DB222731C300435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A114D22272A3B00435263 /* tiera */;
+			targetProxy = 6E5A11DA222731C300435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11E2222731C300435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11CD222731C300435263 /* tieraViewModel */;
+			targetProxy = 6E5A11E1222731C300435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11FB222731EA00435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11EF222731EA00435263 /* tieraCommon */;
+			targetProxy = 6E5A11FA222731EA00435263 /* PBXContainerItemProxy */;
+		};
+		6E5A11FD222731EA00435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A114D22272A3B00435263 /* tiera */;
+			targetProxy = 6E5A11FC222731EA00435263 /* PBXContainerItemProxy */;
+		};
+		6E5A1204222731EA00435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11EF222731EA00435263 /* tieraCommon */;
+			targetProxy = 6E5A1203222731EA00435263 /* PBXContainerItemProxy */;
+		};
+		6E5A120F222734F100435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11EF222731EA00435263 /* tieraCommon */;
+			targetProxy = 6E5A120E222734F100435263 /* PBXContainerItemProxy */;
+		};
+		6E5A12122227351500435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11882227318400435263 /* tieraModel */;
+			targetProxy = 6E5A12112227351500435263 /* PBXContainerItemProxy */;
+		};
+		6E5A12142227351900435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11EF222731EA00435263 /* tieraCommon */;
+			targetProxy = 6E5A12132227351900435263 /* PBXContainerItemProxy */;
+		};
+		6E5A12182227353600435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11CD222731C300435263 /* tieraViewModel */;
+			targetProxy = 6E5A12172227353600435263 /* PBXContainerItemProxy */;
+		};
+		6E5A121A2227353A00435263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5A11EF222731EA00435263 /* tieraCommon */;
+			targetProxy = 6E5A12192227353A00435263 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -695,6 +1475,390 @@
 			};
 			name = Release;
 		};
+		6E5A11A02227318400435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E5A11A12227318400435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E5A11A22227318400435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Debug;
+		};
+		6E5A11A32227318400435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Release;
+		};
+		6E5A11C4222731A100435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E5A11C5222731A100435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E5A11C7222731A100435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Debug;
+		};
+		6E5A11C8222731A100435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Release;
+		};
+		6E5A11E6222731C300435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraViewModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E5A11E7222731C300435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraViewModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraViewModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E5A11E9222731C300435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Debug;
+		};
+		6E5A11EA222731C300435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Release;
+		};
+		6E5A1208222731EA00435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E5A1209222731EA00435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = tieraCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E5A120B222731EA00435263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Debug;
+		};
+		6E5A120C222731EA00435263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6V4QNE9Q;
+				INFOPLIST_FILE = tieraCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FlexiApps.tieraCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiera.app/tiera";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -730,6 +1894,78 @@
 			buildConfigurations = (
 				6E5A118022272A3D00435263 /* Debug */,
 				6E5A118122272A3D00435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A11A42227318400435263 /* Build configuration list for PBXNativeTarget "tieraModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A11A02227318400435263 /* Debug */,
+				6E5A11A12227318400435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A11A62227318400435263 /* Build configuration list for PBXNativeTarget "tieraModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A11A22227318400435263 /* Debug */,
+				6E5A11A32227318400435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A11C3222731A100435263 /* Build configuration list for PBXNativeTarget "tieraView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A11C4222731A100435263 /* Debug */,
+				6E5A11C5222731A100435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A11C6222731A100435263 /* Build configuration list for PBXNativeTarget "tieraViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A11C7222731A100435263 /* Debug */,
+				6E5A11C8222731A100435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A11E5222731C300435263 /* Build configuration list for PBXNativeTarget "tieraViewModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A11E6222731C300435263 /* Debug */,
+				6E5A11E7222731C300435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A11E8222731C300435263 /* Build configuration list for PBXNativeTarget "tieraViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A11E9222731C300435263 /* Debug */,
+				6E5A11EA222731C300435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A1207222731EA00435263 /* Build configuration list for PBXNativeTarget "tieraCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A1208222731EA00435263 /* Debug */,
+				6E5A1209222731EA00435263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E5A120A222731EA00435263 /* Build configuration list for PBXNativeTarget "tieraCommonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E5A120B222731EA00435263 /* Debug */,
+				6E5A120C222731EA00435263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
