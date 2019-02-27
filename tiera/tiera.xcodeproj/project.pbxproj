@@ -15,6 +15,7 @@
 		6E5A115F22272A3D00435263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A115D22272A3D00435263 /* LaunchScreen.storyboard */; };
 		6E5A116A22272A3D00435263 /* tieraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A116922272A3D00435263 /* tieraTests.swift */; };
 		6E5A117522272A3D00435263 /* tieraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A117422272A3D00435263 /* tieraUITests.swift */; };
+		6E5A118322272E5100435263 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A118222272E5100435263 /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6E5A117022272A3D00435263 /* tieraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tieraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5A117422272A3D00435263 /* tieraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tieraUITests.swift; sourceTree = "<group>"; };
 		6E5A117622272A3D00435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5A118222272E5100435263 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		6E5A114522272A3B00435263 = {
 			isa = PBXGroup;
 			children = (
+				6E5A118222272E5100435263 /* CHANGELOG.md */,
 				6E5A115022272A3B00435263 /* tiera */,
 				6E5A116822272A3D00435263 /* tieraTests */,
 				6E5A117322272A3D00435263 /* tieraUITests */,
@@ -235,6 +238,7 @@
 				6E5A115F22272A3D00435263 /* LaunchScreen.storyboard in Resources */,
 				6E5A115C22272A3D00435263 /* Assets.xcassets in Resources */,
 				6E5A115722272A3B00435263 /* Main.storyboard in Resources */,
+				6E5A118322272E5100435263 /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
