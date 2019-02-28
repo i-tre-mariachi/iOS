@@ -1,16 +1,45 @@
 PODS:
+  - Locksmith (4.0.0)
+  - Nimble (7.3.4)
+  - Quick (1.3.4)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.1.0)
+  - SwiftyUserDefaults (4.0.0-alpha.1)
   - Swinject (2.5.0)
 
 DEPENDENCIES:
+  - Locksmith
+  - Nimble
+  - Quick
+  - ReactiveCocoa
+  - ReactiveSwift
+  - SwiftyUserDefaults (= 4.0.0-alpha.1)
   - Swinject
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Locksmith
+    - Nimble
+    - Quick
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+    - SwiftyUserDefaults
     - Swinject
 
 SPEC CHECKSUMS:
+  Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SwiftyUserDefaults: cebe0ff9472f52699772a514b6f7155861d8069b
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: 88e169ca208447981b97a51ac6d8b9b4a0dbb396
+PODFILE CHECKSUM: 64fce267e96973a52f87a0438063b30042d95f7f
 
 COCOAPODS: 1.5.3

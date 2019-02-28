@@ -1,0 +1,6 @@
+framework module Pods_tieraViewModel {
+  umbrella header "Pods-tieraViewModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

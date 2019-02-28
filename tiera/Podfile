@@ -7,15 +7,97 @@ target 'tiera' do
 
   # Pods for tiera
 pod 'Swinject'
+pod 'ReactiveCocoa'
+pod 'ReactiveSwift'
 
   target 'tieraTests' do
     inherit! :search_paths
     # Pods for testing
+    
+    pod 'Nimble'
+    pod 'Quick'
   end
 
   target 'tieraUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Nimble'
+    pod 'Quick'
   end
 
+end
+
+target 'tieraCommon' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for tieraCommon
+    pod 'ReactiveSwift'
+    
+    target 'tieraCommonTests' do
+        inherit! :search_paths
+        # Pods for testing
+        
+        pod 'Nimble'
+        pod 'Quick'
+    end
+    
+end
+
+target 'tieraModel' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for tieraModel
+    pod 'Locksmith'
+    
+    pod 'ReactiveCocoa'
+    pod 'ReactiveSwift'
+    pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
+    
+    target 'tieraModelTests' do
+        inherit! :search_paths
+        # Pods for testing
+        
+        pod 'Nimble'
+        pod 'Quick'
+    end
+    
+end
+
+target 'tieraViewModel' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for tieraViewModel
+    
+    pod 'ReactiveCocoa'
+    pod 'ReactiveSwift'
+    
+    target 'tieraViewModelTests' do
+        inherit! :search_paths
+        # Pods for testing
+        
+        pod 'Nimble'
+        pod 'Quick'
+    end
+    
+end
+
+
+target 'tieraView' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
+    
+    # Pods for tieraView
+
+    
+    target 'tieraViewTests' do
+        inherit! :search_paths
+        # Pods for testing
+        
+        pod 'Nimble'
+        pod 'Quick'
+    end
+    
 end

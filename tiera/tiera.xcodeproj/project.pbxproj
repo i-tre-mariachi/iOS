@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B2EFD733BCA773E1B9F39D3 /* Pods_tieraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ECB2723BC8C18FC47E367F /* Pods_tieraUITests.framework */; };
 		5F5FE2C8F065CC70EE7835B9 /* Pods_tiera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7A07A85B3F29FCDA08EA34 /* Pods_tiera.framework */; };
+		6007B1437CA54D3A02ACAE30 /* Pods_tieraModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8B480BB4BB08EF101C07CF /* Pods_tieraModel.framework */; };
+		629E1892A2C650A26DD60185 /* Pods_tieraViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF36435EC7B5B6E3FFEEA81 /* Pods_tieraViewTests.framework */; };
 		6E5A115222272A3B00435263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A115122272A3B00435263 /* AppDelegate.swift */; };
 		6E5A115422272A3B00435263 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A115322272A3B00435263 /* ViewController.swift */; };
 		6E5A115722272A3B00435263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A115522272A3B00435263 /* Main.storyboard */; };
@@ -43,7 +45,13 @@
 		6E5A12162227352400435263 /* tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; };
 		6E5A121B2227354200435263 /* tieraViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11CE222731C300435263 /* tieraViewModel.framework */; };
 		6E5A121C2227354600435263 /* tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5A11F0222731EA00435263 /* tieraCommon.framework */; };
+		71150497CC461AA7126023C0 /* Pods_tieraViewModelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485E2D704DCBD97DCE2855F8 /* Pods_tieraViewModelTests.framework */; };
+		747AE2AB6D1849D7415597F4 /* Pods_tieraCommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94E72446F797F8C2B058DB /* Pods_tieraCommonTests.framework */; };
 		779B3560C649AB9EDE92193C /* Pods_tieraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD324286AD6CF2D33C62D963 /* Pods_tieraTests.framework */; };
+		855CDA7C12A214FEA47820A5 /* Pods_tieraView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C235E1EBE79EB1413B05B152 /* Pods_tieraView.framework */; };
+		AD840092EAEE3FDA3FE7C623 /* Pods_tieraModelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08B6BA49FFA3777C4FC010B /* Pods_tieraModelTests.framework */; };
+		B5DD8ACED76790E2719BBE9A /* Pods_tieraCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE970694C31A716CE7166F7A /* Pods_tieraCommon.framework */; };
+		E8104B982620AA2D7075FC36 /* Pods_tieraViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52186A193EC7044E604969D0 /* Pods_tieraViewModel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,9 +208,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00692FFF6B74B9F6B80BDE80 /* Pods-tieraModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraModelTests/Pods-tieraModelTests.release.xcconfig"; sourceTree = "<group>"; };
 		017B452D5F000ABABB295DDB /* Pods-tiera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiera.release.xcconfig"; path = "Pods/Target Support Files/Pods-tiera/Pods-tiera.release.xcconfig"; sourceTree = "<group>"; };
+		0D9A72C084382A3061365043 /* Pods-tieraCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraCommon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraCommon/Pods-tieraCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		10C675444A0D72F7068EA3EA /* Pods-tieraViewModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewModelTests/Pods-tieraViewModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F94E72446F797F8C2B058DB /* Pods_tieraCommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraCommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21631367566ABA3331021525 /* Pods-tieraCommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraCommonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraCommonTests/Pods-tieraCommonTests.release.xcconfig"; sourceTree = "<group>"; };
 		2536D70B0658B7B494931438 /* Pods-tieraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraTests/Pods-tieraTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F249AC82A7E5737097BA212 /* Pods-tieraViewModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewModel/Pods-tieraViewModel.debug.xcconfig"; sourceTree = "<group>"; };
+		3236672F5F076A1B495FDD97 /* Pods-tieraView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraView/Pods-tieraView.debug.xcconfig"; sourceTree = "<group>"; };
+		3A3AD82B20451D891033E919 /* Pods-tieraView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraView.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraView/Pods-tieraView.release.xcconfig"; sourceTree = "<group>"; };
+		485E2D704DCBD97DCE2855F8 /* Pods_tieraViewModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraViewModelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E39C53E8B7244DC62BA56A6 /* Pods-tieraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraUITests/Pods-tieraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52186A193EC7044E604969D0 /* Pods_tieraViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B85F7A0DBE2F289D84EEEF6 /* Pods-tieraViewModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewModelTests/Pods-tieraViewModelTests.release.xcconfig"; sourceTree = "<group>"; };
+		6166C60FDF02D58772EDAFDE /* Pods-tieraModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraModel/Pods-tieraModel.debug.xcconfig"; sourceTree = "<group>"; };
 		6E5A114E22272A3B00435263 /* tiera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5A115122272A3B00435263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E5A115322272A3B00435263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -242,12 +262,24 @@
 		6E5A11F8222731EA00435263 /* tieraCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tieraCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5A11FF222731EA00435263 /* tieraCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tieraCommonTests.swift; sourceTree = "<group>"; };
 		6E5A1201222731EA00435263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79C8EF8E9151A2C643E155AA /* Pods-tieraViewModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewModel/Pods-tieraViewModel.release.xcconfig"; sourceTree = "<group>"; };
+		7C27E225E8336D332BA1D947 /* Pods-tieraCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraCommon/Pods-tieraCommon.release.xcconfig"; sourceTree = "<group>"; };
+		815F37FAD80B5F0D4617F637 /* Pods-tieraViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewTests/Pods-tieraViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		88220F3DE3666CABB822B2B5 /* Pods-tieraModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraModelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraModelTests/Pods-tieraModelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0E564A1C3F447D643144F9E /* Pods-tieraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraTests/Pods-tieraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B57CA68E5A5E41E94F9FFF91 /* Pods-tieraCommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraCommonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraCommonTests/Pods-tieraCommonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C235E1EBE79EB1413B05B152 /* Pods_tieraView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ECB2723BC8C18FC47E367F /* Pods_tieraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7A07A85B3F29FCDA08EA34 /* Pods_tiera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tiera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA7166503F45A423BA5DC75 /* Pods-tiera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tiera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tiera/Pods-tiera.debug.xcconfig"; sourceTree = "<group>"; };
+		CFF36435EC7B5B6E3FFEEA81 /* Pods_tieraViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D161A1F384B0C1B8FFDA60EC /* Pods-tieraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraUITests/Pods-tieraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D9ED40175C6DC4C07EDFC594 /* Pods-tieraModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraModel/Pods-tieraModel.release.xcconfig"; sourceTree = "<group>"; };
+		DA8B480BB4BB08EF101C07CF /* Pods_tieraModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E472F5F31EF3D7C0AF329D86 /* Pods-tieraViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewTests/Pods-tieraViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F08B6BA49FFA3777C4FC010B /* Pods_tieraModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraModelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD324286AD6CF2D33C62D963 /* Pods_tieraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE970694C31A716CE7166F7A /* Pods_tieraCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tieraCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5A12102227350200435263 /* tieraCommon.framework in Frameworks */,
+				6007B1437CA54D3A02ACAE30 /* Pods_tieraModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5A11922227318400435263 /* tieraModel.framework in Frameworks */,
+				AD840092EAEE3FDA3FE7C623 /* Pods_tieraModelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +335,7 @@
 			files = (
 				6E5A121C2227354600435263 /* tieraCommon.framework in Frameworks */,
 				6E5A121B2227354200435263 /* tieraViewModel.framework in Frameworks */,
+				855CDA7C12A214FEA47820A5 /* Pods_tieraView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5A11B5222731A100435263 /* tieraView.framework in Frameworks */,
+				629E1892A2C650A26DD60185 /* Pods_tieraViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +354,7 @@
 			files = (
 				6E5A12162227352400435263 /* tieraCommon.framework in Frameworks */,
 				6E5A12152227352000435263 /* tieraModel.framework in Frameworks */,
+				E8104B982620AA2D7075FC36 /* Pods_tieraViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5A11D7222731C300435263 /* tieraViewModel.framework in Frameworks */,
+				71150497CC461AA7126023C0 /* Pods_tieraViewModelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +371,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DD8ACED76790E2719BBE9A /* Pods_tieraCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5A11F9222731EA00435263 /* tieraCommon.framework in Frameworks */,
+				747AE2AB6D1849D7415597F4 /* Pods_tieraCommonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +544,14 @@
 				CA7A07A85B3F29FCDA08EA34 /* Pods_tiera.framework */,
 				FD324286AD6CF2D33C62D963 /* Pods_tieraTests.framework */,
 				C9ECB2723BC8C18FC47E367F /* Pods_tieraUITests.framework */,
+				FE970694C31A716CE7166F7A /* Pods_tieraCommon.framework */,
+				1F94E72446F797F8C2B058DB /* Pods_tieraCommonTests.framework */,
+				DA8B480BB4BB08EF101C07CF /* Pods_tieraModel.framework */,
+				F08B6BA49FFA3777C4FC010B /* Pods_tieraModelTests.framework */,
+				C235E1EBE79EB1413B05B152 /* Pods_tieraView.framework */,
+				52186A193EC7044E604969D0 /* Pods_tieraViewModel.framework */,
+				485E2D704DCBD97DCE2855F8 /* Pods_tieraViewModelTests.framework */,
+				CFF36435EC7B5B6E3FFEEA81 /* Pods_tieraViewTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -517,6 +565,22 @@
 				2536D70B0658B7B494931438 /* Pods-tieraTests.release.xcconfig */,
 				4E39C53E8B7244DC62BA56A6 /* Pods-tieraUITests.debug.xcconfig */,
 				D161A1F384B0C1B8FFDA60EC /* Pods-tieraUITests.release.xcconfig */,
+				0D9A72C084382A3061365043 /* Pods-tieraCommon.debug.xcconfig */,
+				7C27E225E8336D332BA1D947 /* Pods-tieraCommon.release.xcconfig */,
+				B57CA68E5A5E41E94F9FFF91 /* Pods-tieraCommonTests.debug.xcconfig */,
+				21631367566ABA3331021525 /* Pods-tieraCommonTests.release.xcconfig */,
+				6166C60FDF02D58772EDAFDE /* Pods-tieraModel.debug.xcconfig */,
+				D9ED40175C6DC4C07EDFC594 /* Pods-tieraModel.release.xcconfig */,
+				88220F3DE3666CABB822B2B5 /* Pods-tieraModelTests.debug.xcconfig */,
+				00692FFF6B74B9F6B80BDE80 /* Pods-tieraModelTests.release.xcconfig */,
+				3236672F5F076A1B495FDD97 /* Pods-tieraView.debug.xcconfig */,
+				3A3AD82B20451D891033E919 /* Pods-tieraView.release.xcconfig */,
+				2F249AC82A7E5737097BA212 /* Pods-tieraViewModel.debug.xcconfig */,
+				79C8EF8E9151A2C643E155AA /* Pods-tieraViewModel.release.xcconfig */,
+				10C675444A0D72F7068EA3EA /* Pods-tieraViewModelTests.debug.xcconfig */,
+				5B85F7A0DBE2F289D84EEEF6 /* Pods-tieraViewModelTests.release.xcconfig */,
+				E472F5F31EF3D7C0AF329D86 /* Pods-tieraViewTests.debug.xcconfig */,
+				815F37FAD80B5F0D4617F637 /* Pods-tieraViewTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -591,6 +655,7 @@
 				6E5A116122272A3D00435263 /* Sources */,
 				6E5A116222272A3D00435263 /* Frameworks */,
 				6E5A116322272A3D00435263 /* Resources */,
+				74DFBAECBE0B76685994895E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -610,6 +675,7 @@
 				6E5A116C22272A3D00435263 /* Sources */,
 				6E5A116D22272A3D00435263 /* Frameworks */,
 				6E5A116E22272A3D00435263 /* Resources */,
+				EFA22C92D5FE3F76A9EB8BD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -625,6 +691,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A11A42227318400435263 /* Build configuration list for PBXNativeTarget "tieraModel" */;
 			buildPhases = (
+				FAE8120230F2527F56528DDE /* [CP] Check Pods Manifest.lock */,
 				6E5A11842227318400435263 /* Headers */,
 				6E5A11852227318400435263 /* Sources */,
 				6E5A11862227318400435263 /* Frameworks */,
@@ -644,9 +711,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A11A62227318400435263 /* Build configuration list for PBXNativeTarget "tieraModelTests" */;
 			buildPhases = (
+				75DA3F0F0708C9385738D7F1 /* [CP] Check Pods Manifest.lock */,
 				6E5A118D2227318400435263 /* Sources */,
 				6E5A118E2227318400435263 /* Frameworks */,
 				6E5A118F2227318400435263 /* Resources */,
+				DB24160B16FF6428DD5F15F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -663,6 +732,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A11C3222731A100435263 /* Build configuration list for PBXNativeTarget "tieraView" */;
 			buildPhases = (
+				149848840A3D66FAA009B407 /* [CP] Check Pods Manifest.lock */,
 				6E5A11A7222731A100435263 /* Headers */,
 				6E5A11A8222731A100435263 /* Sources */,
 				6E5A11A9222731A100435263 /* Frameworks */,
@@ -683,9 +753,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A11C6222731A100435263 /* Build configuration list for PBXNativeTarget "tieraViewTests" */;
 			buildPhases = (
+				1095033B1FE1F5A5AC9F44E5 /* [CP] Check Pods Manifest.lock */,
 				6E5A11B0222731A100435263 /* Sources */,
 				6E5A11B1222731A100435263 /* Frameworks */,
 				6E5A11B2222731A100435263 /* Resources */,
+				1CCEB43F3F8F869178583E11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -702,6 +774,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A11E5222731C300435263 /* Build configuration list for PBXNativeTarget "tieraViewModel" */;
 			buildPhases = (
+				E858E9E008871AEEA35B81D4 /* [CP] Check Pods Manifest.lock */,
 				6E5A11C9222731C300435263 /* Headers */,
 				6E5A11CA222731C300435263 /* Sources */,
 				6E5A11CB222731C300435263 /* Frameworks */,
@@ -722,9 +795,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A11E8222731C300435263 /* Build configuration list for PBXNativeTarget "tieraViewModelTests" */;
 			buildPhases = (
+				E0EBBAAEB2FD9FFD1E11E72C /* [CP] Check Pods Manifest.lock */,
 				6E5A11D2222731C300435263 /* Sources */,
 				6E5A11D3222731C300435263 /* Frameworks */,
 				6E5A11D4222731C300435263 /* Resources */,
+				79B139CAAEB2F3EF183A903C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -741,6 +816,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A1207222731EA00435263 /* Build configuration list for PBXNativeTarget "tieraCommon" */;
 			buildPhases = (
+				424762849B4D4E02668C3846 /* [CP] Check Pods Manifest.lock */,
 				6E5A11EB222731EA00435263 /* Headers */,
 				6E5A11EC222731EA00435263 /* Sources */,
 				6E5A11ED222731EA00435263 /* Frameworks */,
@@ -759,9 +835,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5A120A222731EA00435263 /* Build configuration list for PBXNativeTarget "tieraCommonTests" */;
 			buildPhases = (
+				9161925A5D0EE5A15D7CDAA7 /* [CP] Check Pods Manifest.lock */,
 				6E5A11F4222731EA00435263 /* Sources */,
 				6E5A11F5222731EA00435263 /* Frameworks */,
 				6E5A11F6222731EA00435263 /* Resources */,
+				A7DF8E0340B850213D154B06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -845,10 +923,10 @@
 				6E5A11AB222731A100435263 /* tieraView */,
 				6E5A116422272A3D00435263 /* tieraTests */,
 				6E5A116F22272A3D00435263 /* tieraUITests */,
-				6E5A11902227318400435263 /* tieraModelTests */,
-				6E5A11B3222731A100435263 /* tieraViewTests */,
-				6E5A11D5222731C300435263 /* tieraViewModelTests */,
 				6E5A11F7222731EA00435263 /* tieraCommonTests */,
+				6E5A11902227318400435263 /* tieraModelTests */,
+				6E5A11D5222731C300435263 /* tieraViewModelTests */,
+				6E5A11B3222731A100435263 /* tieraViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -938,6 +1016,74 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1095033B1FE1F5A5AC9F44E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		149848840A3D66FAA009B407 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CCEB43F3F8F869178583E11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tieraViewTests/Pods-tieraViewTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tieraViewTests/Pods-tieraViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		321391EBAB4A6D547D89184B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -947,13 +1093,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-tiera/Pods-tiera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -982,6 +1138,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		424762849B4D4E02668C3846 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5CFA84CAF4083BEE6A6EA171 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1004,6 +1182,188 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		74DFBAECBE0B76685994895E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tieraTests/Pods-tieraTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tieraTests/Pods-tieraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75DA3F0F0708C9385738D7F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraModelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79B139CAAEB2F3EF183A903C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tieraViewModelTests/Pods-tieraViewModelTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tieraViewModelTests/Pods-tieraViewModelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9161925A5D0EE5A15D7CDAA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraCommonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7DF8E0340B850213D154B06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tieraCommonTests/Pods-tieraCommonTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tieraCommonTests/Pods-tieraCommonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB24160B16FF6428DD5F15F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tieraModelTests/Pods-tieraModelTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tieraModelTests/Pods-tieraModelTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0EBBAAEB2FD9FFD1E11E72C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraViewModelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E21947489B1009EC3DA6D0B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1020,6 +1380,74 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-tieraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E858E9E008871AEEA35B81D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraViewModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFA22C92D5FE3F76A9EB8BD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tieraUITests/Pods-tieraUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tieraUITests/Pods-tieraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE8120230F2527F56528DDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tieraModel-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1393,7 +1821,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0E564A1C3F447D643144F9E /* Pods-tieraTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
@@ -1415,7 +1843,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2536D70B0658B7B494931438 /* Pods-tieraTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
@@ -1437,7 +1865,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E39C53E8B7244DC62BA56A6 /* Pods-tieraUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraUITests/Info.plist;
@@ -1458,7 +1886,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D161A1F384B0C1B8FFDA60EC /* Pods-tieraUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraUITests/Info.plist;
@@ -1477,6 +1905,7 @@
 		};
 		6E5A11A02227318400435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6166C60FDF02D58772EDAFDE /* Pods-tieraModel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1505,6 +1934,7 @@
 		};
 		6E5A11A12227318400435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9ED40175C6DC4C07EDFC594 /* Pods-tieraModel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1533,8 +1963,9 @@
 		};
 		6E5A11A22227318400435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88220F3DE3666CABB822B2B5 /* Pods-tieraModelTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraModelTests/Info.plist;
@@ -1553,8 +1984,9 @@
 		};
 		6E5A11A32227318400435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00692FFF6B74B9F6B80BDE80 /* Pods-tieraModelTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraModelTests/Info.plist;
@@ -1573,6 +2005,7 @@
 		};
 		6E5A11C4222731A100435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3236672F5F076A1B495FDD97 /* Pods-tieraView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1601,6 +2034,7 @@
 		};
 		6E5A11C5222731A100435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3AD82B20451D891033E919 /* Pods-tieraView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1629,8 +2063,9 @@
 		};
 		6E5A11C7222731A100435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E472F5F31EF3D7C0AF329D86 /* Pods-tieraViewTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraViewTests/Info.plist;
@@ -1649,8 +2084,9 @@
 		};
 		6E5A11C8222731A100435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815F37FAD80B5F0D4617F637 /* Pods-tieraViewTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraViewTests/Info.plist;
@@ -1669,6 +2105,7 @@
 		};
 		6E5A11E6222731C300435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F249AC82A7E5737097BA212 /* Pods-tieraViewModel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1697,6 +2134,7 @@
 		};
 		6E5A11E7222731C300435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C8EF8E9151A2C643E155AA /* Pods-tieraViewModel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1725,8 +2163,9 @@
 		};
 		6E5A11E9222731C300435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C675444A0D72F7068EA3EA /* Pods-tieraViewModelTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraViewModelTests/Info.plist;
@@ -1745,8 +2184,9 @@
 		};
 		6E5A11EA222731C300435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B85F7A0DBE2F289D84EEEF6 /* Pods-tieraViewModelTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraViewModelTests/Info.plist;
@@ -1765,6 +2205,7 @@
 		};
 		6E5A1208222731EA00435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9A72C084382A3061365043 /* Pods-tieraCommon.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1793,6 +2234,7 @@
 		};
 		6E5A1209222731EA00435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C27E225E8336D332BA1D947 /* Pods-tieraCommon.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1821,8 +2263,9 @@
 		};
 		6E5A120B222731EA00435263 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57CA68E5A5E41E94F9FFF91 /* Pods-tieraCommonTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraCommonTests/Info.plist;
@@ -1841,8 +2284,9 @@
 		};
 		6E5A120C222731EA00435263 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21631367566ABA3331021525 /* Pods-tieraCommonTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6V4QNE9Q;
 				INFOPLIST_FILE = tieraCommonTests/Info.plist;
