@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
+import UserNotifications
 
 class ScheduleVC: UIViewController {
 
@@ -42,7 +44,9 @@ class ScheduleVC: UIViewController {
     
     @objc func dateChanged(datePicker: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-YYY"
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .short
+        dateFormatter.locale = Locale(identifier: "en_US")
         scheduleTextField.text = dateFormatter.string(from: datePicker.date)
     }
     

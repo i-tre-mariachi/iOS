@@ -9,6 +9,7 @@ target 'tiera' do
 pod 'Swinject'
 pod 'ReactiveCocoa'
 pod 'ReactiveSwift'
+pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
 
   target 'tieraTests' do
     inherit! :search_paths
