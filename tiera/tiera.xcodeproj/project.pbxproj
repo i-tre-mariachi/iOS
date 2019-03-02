@@ -50,6 +50,8 @@
 		6E5A1268222A807200435263 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1267222A807200435263 /* UITableView+EmptyMessage.swift */; };
 		6E5A126A222A80EB00435263 /* FAConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1269222A80EB00435263 /* FAConstants.swift */; };
 		6E5A126C222A815F00435263 /* FAGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A126B222A815F00435263 /* FAGradientView.swift */; };
+		6E5A126E222A846800435263 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A126D222A846800435263 /* HomeVC.swift */; };
+		6E5A1270222A847B00435263 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A126F222A847B00435263 /* ScheduleVC.swift */; };
 		71150497CC461AA7126023C0 /* Pods_tieraViewModelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485E2D704DCBD97DCE2855F8 /* Pods_tieraViewModelTests.framework */; };
 		747AE2AB6D1849D7415597F4 /* Pods_tieraCommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F94E72446F797F8C2B058DB /* Pods_tieraCommonTests.framework */; };
 		779B3560C649AB9EDE92193C /* Pods_tieraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD324286AD6CF2D33C62D963 /* Pods_tieraTests.framework */; };
@@ -272,6 +274,8 @@
 		6E5A1267222A807200435263 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		6E5A1269222A80EB00435263 /* FAConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAConstants.swift; sourceTree = "<group>"; };
 		6E5A126B222A815F00435263 /* FAGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAGradientView.swift; sourceTree = "<group>"; };
+		6E5A126D222A846800435263 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		6E5A126F222A847B00435263 /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
 		79C8EF8E9151A2C643E155AA /* Pods-tieraViewModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewModel/Pods-tieraViewModel.release.xcconfig"; sourceTree = "<group>"; };
 		7C27E225E8336D332BA1D947 /* Pods-tieraCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraCommon/Pods-tieraCommon.release.xcconfig"; sourceTree = "<group>"; };
 		815F37FAD80B5F0D4617F637 /* Pods-tieraViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tieraViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tieraViewTests/Pods-tieraViewTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -556,6 +560,8 @@
 		6E5A125D222A7F0A00435263 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				6E5A126D222A846800435263 /* HomeVC.swift */,
+				6E5A126F222A847B00435263 /* ScheduleVC.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1494,9 +1500,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E5A1263222A7F7700435263 /* UIColor+HexString.swift in Sources */,
+				6E5A126E222A846800435263 /* HomeVC.swift in Sources */,
 				6E5A1268222A807200435263 /* UITableView+EmptyMessage.swift in Sources */,
 				6E5A125F222A7F3400435263 /* FARoundedButton.swift in Sources */,
 				6E5A115A22272A3B00435263 /* tiera.xcdatamodeld in Sources */,
+				6E5A1270222A847B00435263 /* ScheduleVC.swift in Sources */,
 				6E5A115222272A3B00435263 /* AppDelegate.swift in Sources */,
 				6E5A1261222A7F5100435263 /* FARoundedView.swift in Sources */,
 				6E5A126C222A815F00435263 /* FAGradientView.swift in Sources */,
