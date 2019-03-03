@@ -17,6 +17,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var startCoffeeButton: FARoundedButton!
     @IBOutlet weak var scheduleCoffeeButton: UIButton!
     @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var prepareCoffeeButton: FARoundedButton!
     
     let center = UNUserNotificationCenter.current()
     let options: UNAuthorizationOptions = [.alert, .sound];
@@ -86,7 +87,14 @@ class HomeVC: UIViewController {
 
     @IBAction func startCoffeeTapped(_ sender: Any) {
         progressLabel.text = "Connecting ..."
-        //TODO: start the BT process...
+        ///TODO: start the BT process...
+    }
+    
+    @IBAction func prepareCoffeeTapped(_ sender: Any) {
+        ///Start BT process to Open Tray to add the capsule and fill the water tank
+        /// - parameters:
+        /// - check water tank: 
+        ///
     }
     
     @IBAction func cancelCoffeeTapped(_ sender: Any) {
