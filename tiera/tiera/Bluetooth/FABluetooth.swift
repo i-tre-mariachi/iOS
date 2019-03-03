@@ -50,8 +50,8 @@ protocol KYBluetoothPeripheralDelegate: class {
 
 class KYBluetooth : NSObject
 {
-    @objc static let State = "state"
-    @objc static let StateKey = "stateKey"
+    static let State = "state"
+    static let StateKey = "stateKey"
     
     var serviceUUID: CBUUID?
     var characteristicsUUID = [CBUUID]()
