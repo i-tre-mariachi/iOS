@@ -15,6 +15,8 @@ public let cleanTrayValue = 5
 public let singleDoseUnit = "Single"
 public let lungoDoseUnit = "Lungo"
 
+public let dateTimeFormat = "yyyy-MM-dd HH:mm:ss"
+
 ///Segues
 
 

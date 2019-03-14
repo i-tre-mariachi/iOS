@@ -28,6 +28,9 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         setupDefaultValues()
         setupLocalNotification()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         scheduledLocalNotification()
     }
     
@@ -52,16 +55,11 @@ class HomeVC: UIViewController {
     func scheduledLocalNotification() {
         let content = UNMutableNotificationContent()
         content.title = "Don't forget"
-        content.body = "Coffee is getting ready"
+        content.body = "Coffee is getting ready!"
         content.sound = UNNotificationSound.default
         
-//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 300, repeats: false) //maybe this can be used as a reminder
-    
-        ///from userdefaults
-        let date = Date(timeIntervalSinceNow: 600)
+        guard let date = Defaults[.isScheduledAt] else { return }//Date(timeIntervalSinceNow: 600)
         let trigger = UNCalendarNotificationTrigger.init(dateMatching: NSCalendar.current.dateComponents([.day, .month, .year, .hour, .minute], from: date), repeats: false)
-
-//        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
         
         ///Daily
 //        let triggerDaily = Calendar.current.dateComponents([hour, .minute, .second], from: date)
@@ -85,6 +83,10 @@ class HomeVC: UIViewController {
                                                 title: "Snooze", options: [])
         let deleteAction = UNNotificationAction(identifier: "UYLDeleteAction",
                                                 title: "Delete", options: [.destructive])
+        
+        //TODO: this needs debug to be sure if we need it or not
+        ///Change the isTIeraPrepared to false when coffee is completed (and maybe notify user for replace the capsule and fill water)
+//        Defaults[.isTieraPrepared] = false
     }
 
 
@@ -99,6 +101,9 @@ class HomeVC: UIViewController {
         /// - parameters:
         /// coffeeCleanTrayCounter max number is 5
         Defaults[.coffeeCleanTrayCounter] = Defaults[.coffeeCleanTrayCounter] + 1
+        
+        ///Change the isTIeraPrepared to false when coffee is completed (and maybe notify user for replace the capsule and fill water)
+        Defaults[.isTieraPrepared] = false
     }
     
     @IBAction func prepareCoffeeTapped(_ sender: Any) {
@@ -106,6 +111,14 @@ class HomeVC: UIViewController {
         /// - parameters:
         /// - check water tank: 
         ///
+        
+        if Defaults[.isTieraPrepared] {
+            //TODO: throw message is already prepared
+            return
+        } else {
+            ///on success set isTIeraPrepared key to TRUE
+            Defaults[.isTieraPrepared] = true
+        }
         
     }
     

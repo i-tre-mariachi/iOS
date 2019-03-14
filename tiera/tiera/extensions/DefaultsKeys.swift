@@ -11,6 +11,7 @@ import SwiftyUserDefaults
 extension DefaultsKeys {
     static let isFirstLaunch = DefaultsKey<Bool>("isFirstLaunch", defaultValue: true)
     static let isScheduledAt = DefaultsKey<Date?>("isScheduledAt")
+    static let isTieraPrepared = DefaultsKey<Bool>("isTieraPrepared", defaultValue: false)
 
     static let username = DefaultsKey<String?>("username")
     

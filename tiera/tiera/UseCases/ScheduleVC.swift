@@ -9,12 +9,14 @@
 import UIKit
 import SwiftyUserDefaults
 import UserNotifications
+import tieraCommon
 
 class ScheduleVC: UIViewController {
 
     @IBOutlet weak var closeModalButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var scheduleTextField: UITextField!
+    @IBOutlet weak var doseSegmentedControl: UISegmentedControl!
     
 //    private var dateTimePicker: UIDatePicker
     
@@ -48,6 +50,9 @@ class ScheduleVC: UIViewController {
         dateFormatter.timeStyle = .short
         dateFormatter.locale = Locale(identifier: "en_US")
         scheduleTextField.text = dateFormatter.string(from: datePicker.date)
+        
+        ///Store the selected date to UserDefaults
+        Defaults[.isScheduledAt] = datePicker.date
     }
     
     @IBAction func closeModalTapped(_ sender: Any) {
@@ -56,11 +61,19 @@ class ScheduleVC: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-        ///Store the selected date to UserDefaults
-        
+        print("ScheduledAt: \(String(describing: Defaults[.isScheduledAt])) with dose selected: \(String(describing: Defaults[.coffeeDose]))")
         //TODO: enabled after we have a valid date
         view.endEditing(true)
+        
+        ///TODO: not sure if we are dismissing or show the preparation screen
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func doseSegmentedControlTapped(_ sender: Any) {
+        if Defaults[.coffeeDose] == singleDoseUnit {
+            Defaults[.coffeeDose] = lungoDoseUnit
+        } else {
+            Defaults[.coffeeDose] = singleDoseUnit
+        }
+    }
 }
