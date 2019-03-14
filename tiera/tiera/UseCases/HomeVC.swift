@@ -28,8 +28,7 @@ class HomeVC: UIViewController {
 
         setupLocalNotification()
         scheduledLocalNotification()
-        
-        
+
     }
     
     func setupLocalNotification() {
@@ -88,6 +87,14 @@ class HomeVC: UIViewController {
     @IBAction func startCoffeeTapped(_ sender: Any) {
         progressLabel.text = "Connecting ..."
         ///TODO: start the BT process...
+        
+        ///Keep the number of completed coffees made might need it for life expectance of the tiera to run diagnostics or so?
+        Defaults[.coffeeCounter] += 1
+        
+        ///Update the counter to prepare the liquid tray after the reach of 5 alert and on success reset the counter to 0
+        /// - parameters:
+        /// coffeeCleanTrayCounter max number is 5
+        Defaults[.coffeeCleanTrayCounter] = Defaults[.coffeeCleanTrayCounter] + 1
     }
     
     @IBAction func prepareCoffeeTapped(_ sender: Any) {
@@ -95,11 +102,13 @@ class HomeVC: UIViewController {
         /// - parameters:
         /// - check water tank: 
         ///
+        
     }
     
     @IBAction func cancelCoffeeTapped(_ sender: Any) {
         progressLabel.text = "Ready to connect!"
         //TODO: stop the connection
+        
         //Maybe 
     }
     

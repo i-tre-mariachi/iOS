@@ -56,6 +56,8 @@ class ScheduleVC: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+        ///Store the selected date to UserDefaults
+        
         //TODO: enabled after we have a valid date
         view.endEditing(true)
         dismiss(animated: true, completion: nil)

@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import UserNotifications
+import SwiftyUserDefaults
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let center = UNUserNotificationCenter.current()
         center.delegate = notificationDelegate
+        
+        if Defaults[.isFirstLaunch] == true {
+            Defaults[.isFirstLaunch] = false
+        }
         
         return true
     }
