@@ -18,30 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-yA-dRS">
-                                <rect key="frame" x="163" y="185" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelCoffeeTapped:" destination="Wxs-Mh-Aka" eventType="touchUpInside" id="DYP-UK-KGL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRW-f8-Y2j">
-                                <rect key="frame" x="155" y="476" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRW-f8-Y2j" customClass="FARoundedButton" customModule="tiera" customModuleProvider="target">
+                                <rect key="frame" x="125" y="410" width="125" height="124"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="gTX-WL-afE"/>
+                                </constraints>
                                 <state key="normal" title="Schedule">
-                                    <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusButton">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="cancelCoffeeTapped:" destination="Wxs-Mh-Aka" eventType="touchUpInside" id="Kpt-Cd-pCf"/>
                                     <action selector="scheduleCoffeeTapped:" destination="Wxs-Mh-Aka" eventType="touchUpInside" id="Qkw-63-fQA"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="udL-v8-qcm">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="udL-v8-qcm">
                                 <rect key="frame" x="135" y="109" width="105" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Single"/>
                                     <segment title="Lungo"/>
@@ -51,17 +48,21 @@
                                     <action selector="doseSegmentedControlTapped:" destination="Wxs-Mh-Aka" eventType="valueChanged" id="b0g-8Q-jB3"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready to connect!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWZ-IA-7N5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to connect!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWZ-IA-7N5">
                                 <rect key="frame" x="16" y="678" width="343" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="w9Q-V1-vbC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYJ-Rb-Joc" customClass="FARoundedButton" customModule="tiera" customModuleProvider="target">
-                                <rect key="frame" x="191" y="344" width="124" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYJ-Rb-Joc" customClass="FARoundedButton" customModule="tiera" customModuleProvider="target">
+                                <rect key="frame" x="191" y="278" width="124" height="124"/>
                                 <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="PER-AE-Oua"/>
+                                </constraints>
                                 <state key="normal" title="Make me coffee">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -74,10 +75,12 @@
                                     <action selector="startCoffeeTapped:" destination="Wxs-Mh-Aka" eventType="touchUpInside" id="7lh-rg-gi7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIE-T8-2Ll" customClass="FARoundedButton" customModule="tiera" customModuleProvider="target">
-                                <rect key="frame" x="59" y="344" width="124" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIE-T8-2Ll" customClass="FARoundedButton" customModule="tiera" customModuleProvider="target">
+                                <rect key="frame" x="59" y="278" width="124" height="124"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="zD1-oZ-qoe"/>
+                                </constraints>
                                 <state key="normal" title="Prepare tiera">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -91,8 +94,40 @@
                                     <action selector="startCoffeeTapped:" destination="Wxs-Mh-Aka" eventType="touchUpInside" id="wAV-6d-HpU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-yA-dRS">
+                                <rect key="frame" x="163" y="542" width="49" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelCoffeeTapped:" destination="Wxs-Mh-Aka" eventType="touchUpInside" id="DYP-UK-KGL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tRW-f8-Y2j" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="125" id="0TJ-b6-fCj"/>
+                            <constraint firstItem="wrU-yA-dRS" firstAttribute="centerX" secondItem="rWZ-IA-7N5" secondAttribute="centerX" id="0lA-wI-ff3"/>
+                            <constraint firstItem="iIE-T8-2Ll" firstAttribute="top" secondItem="ZYJ-Rb-Joc" secondAttribute="top" id="1MP-kD-AWo"/>
+                            <constraint firstItem="iIE-T8-2Ll" firstAttribute="firstBaseline" secondItem="ZYJ-Rb-Joc" secondAttribute="firstBaseline" id="C51-Ki-elB"/>
+                            <constraint firstItem="iIE-T8-2Ll" firstAttribute="top" secondItem="lfY-Yh-Klm" secondAttribute="top" constant="278" id="DZ4-m0-usp"/>
+                            <constraint firstItem="wrU-yA-dRS" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="163" id="Fld-Zs-Pro"/>
+                            <constraint firstItem="tRW-f8-Y2j" firstAttribute="centerX" secondItem="wrU-yA-dRS" secondAttribute="centerX" id="Mkj-AL-yP7"/>
+                            <constraint firstItem="i2g-NP-kN4" firstAttribute="trailing" secondItem="rWZ-IA-7N5" secondAttribute="trailing" constant="16" id="OdI-GY-ces"/>
+                            <constraint firstItem="udL-v8-qcm" firstAttribute="top" secondItem="i2g-NP-kN4" secondAttribute="top" constant="21" id="U94-X9-dZj"/>
+                            <constraint firstItem="i2g-NP-kN4" firstAttribute="trailing" secondItem="udL-v8-qcm" secondAttribute="trailing" constant="135" id="Wik-mV-dlL"/>
+                            <constraint firstItem="iIE-T8-2Ll" firstAttribute="baseline" secondItem="ZYJ-Rb-Joc" secondAttribute="baseline" id="Wz4-UB-GJy"/>
+                            <constraint firstItem="i2g-NP-kN4" firstAttribute="bottom" secondItem="rWZ-IA-7N5" secondAttribute="bottom" id="gvF-NC-oHA"/>
+                            <constraint firstItem="iIE-T8-2Ll" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="59" id="nKd-oe-jiY"/>
+                            <constraint firstItem="i2g-NP-kN4" firstAttribute="trailing" secondItem="ZYJ-Rb-Joc" secondAttribute="trailing" constant="60" id="pE7-M0-hMz"/>
+                            <constraint firstItem="rWZ-IA-7N5" firstAttribute="centerX" secondItem="i2g-NP-kN4" secondAttribute="centerX" id="pV9-2F-XFU"/>
+                            <constraint firstItem="udL-v8-qcm" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="135" id="rTp-fB-alo"/>
+                            <constraint firstItem="rWZ-IA-7N5" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="16" id="rjU-Ct-nwQ"/>
+                            <constraint firstItem="udL-v8-qcm" firstAttribute="centerX" secondItem="i2g-NP-kN4" secondAttribute="centerX" id="u1T-4j-wme"/>
+                            <constraint firstItem="ZYJ-Rb-Joc" firstAttribute="leading" secondItem="iIE-T8-2Ll" secondAttribute="trailing" constant="8" symbolic="YES" id="v2I-cF-uSA"/>
+                            <constraint firstItem="tRW-f8-Y2j" firstAttribute="top" secondItem="iIE-T8-2Ll" secondAttribute="bottom" constant="8" symbolic="YES" id="wrb-Pf-44X"/>
+                            <constraint firstItem="wrU-yA-dRS" firstAttribute="top" secondItem="tRW-f8-Y2j" secondAttribute="bottom" constant="8" symbolic="YES" id="yc1-ug-5FV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="i2g-NP-kN4"/>
                     </view>
                     <navigationItem key="navigationItem" title="tiera" id="91U-iU-pNZ"/>
@@ -167,6 +202,9 @@
                                     <segment title="Lungo"/>
                                 </segments>
                                 <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="doseSegmentedControlTapped:" destination="KIy-0U-snY" eventType="valueChanged" id="RKv-hT-dPQ"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-cY-erP">
                                 <rect key="frame" x="0.0" y="336" width="375" height="448"/>
@@ -189,6 +227,7 @@
                     </view>
                     <connections>
                         <outlet property="closeModalButton" destination="5ci-P5-pbA" id="QAZ-Sc-KEl"/>
+                        <outlet property="doseSegmentedControl" destination="gsv-0r-b2a" id="ebI-d3-VpZ"/>
                         <outlet property="saveButton" destination="MfA-e2-BRb" id="YrK-Cv-GVV"/>
                         <outlet property="scheduleTextField" destination="Nh5-TT-sHl" id="QjQ-Yb-b0S"/>
                     </connections>
