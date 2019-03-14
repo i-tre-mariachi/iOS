@@ -18,4 +18,5 @@ extension DefaultsKeys {
     static let coffeeCleanTrayCounter = DefaultsKey<Int>("coffeeCleanTrayCounter")
     static let coffeePreparationCounter = DefaultsKey<Int>("coffeePreparationCounter")
 
+    static let coffeeDose = DefaultsKey<String>("coffeeDose")
 }

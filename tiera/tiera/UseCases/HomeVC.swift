@@ -9,10 +9,11 @@
 import UIKit
 import SwiftyUserDefaults
 import UserNotifications
+import tieraCommon
 
 class HomeVC: UIViewController {
 
-    @IBOutlet weak var selectionSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var doseSegmentedControl: UISegmentedControl!
     @IBOutlet weak var stopCoffeeButton: UIButton!
     @IBOutlet weak var startCoffeeButton: FARoundedButton!
     @IBOutlet weak var scheduleCoffeeButton: UIButton!
@@ -25,10 +26,13 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupDefaultValues()
         setupLocalNotification()
         scheduledLocalNotification()
-
+    }
+    
+    func setupDefaultValues() {
+        Defaults[.coffeeDose] = singleDoseUnit
     }
     
     func setupLocalNotification() {
@@ -116,4 +120,11 @@ class HomeVC: UIViewController {
         performSegue(withIdentifier: "toScheduleSegue", sender: self)
     }
     
+    @IBAction func doseSegmentedControlTapped(_ sender: Any) {
+        if Defaults[.coffeeDose] == singleDoseUnit {
+            Defaults[.coffeeDose] = lungoDoseUnit
+        } else {
+            Defaults[.coffeeDose] = singleDoseUnit
+        }
+    }
 }

@@ -10,8 +10,10 @@ import Foundation
 
 ///Keys
 ///Use cleanTrayValue as a `preset` limit of when the user should get notified to empty the liquid tray
-let cleanTrayValue = 5
+public let cleanTrayValue = 5
 
+public let singleDoseUnit = "Single"
+public let lungoDoseUnit = "Lungo"
 
 ///Segues
 

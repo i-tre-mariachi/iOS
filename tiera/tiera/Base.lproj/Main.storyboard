@@ -47,6 +47,9 @@
                                     <segment title="Lungo"/>
                                 </segments>
                                 <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="doseSegmentedControlTapped:" destination="Wxs-Mh-Aka" eventType="valueChanged" id="b0g-8Q-jB3"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready to connect!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWZ-IA-7N5">
                                 <rect key="frame" x="16" y="678" width="343" height="100"/>
@@ -94,10 +97,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="tiera" id="91U-iU-pNZ"/>
                     <connections>
+                        <outlet property="doseSegmentedControl" destination="udL-v8-qcm" id="mia-NP-TeV"/>
                         <outlet property="prepareCoffeeButton" destination="iIE-T8-2Ll" id="a9L-Vh-B8y"/>
                         <outlet property="progressLabel" destination="rWZ-IA-7N5" id="fZ0-7x-nig"/>
                         <outlet property="scheduleCoffeeButton" destination="tRW-f8-Y2j" id="6gQ-8V-w45"/>
-                        <outlet property="selectionSegmentedControl" destination="udL-v8-qcm" id="hsd-za-46a"/>
                         <outlet property="startCoffeeButton" destination="ZYJ-Rb-Joc" id="J80-NK-NQq"/>
                         <outlet property="stopCoffeeButton" destination="wrU-yA-dRS" id="yrv-tT-cTj"/>
                         <segue destination="KIy-0U-snY" kind="presentation" identifier="toScheduleSegue" id="flz-5F-MMb"/>
