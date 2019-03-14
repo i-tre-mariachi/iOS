@@ -9,6 +9,7 @@
 
 ## [1.0.0]
 ### Added
+- [#7] added the BT Support for services to be added with a `Diagnostics Service` as an example.
 - [#6] added `Home` & `Schedule` screen to show the main functionalities of the app.
 - [#5] added `SwiftyUserDefaults` to support kind of persistence within each device.
 - [#4] added `Nimble` & `Quick` to use for unit testing.
