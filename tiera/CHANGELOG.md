@@ -9,6 +9,7 @@
 
 ## [1.0.0]
 ### Added
+- [#8] added support to date format from a string or textfield.
 - [#7] added the BT Support for services to be added with a `Diagnostics Service` as an example.
 - [#6] added `Home` & `Schedule` screen to show the main functionalities of the app.
 - [#5] added `SwiftyUserDefaults` to support kind of persistence within each device.
