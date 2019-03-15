@@ -23,6 +23,16 @@ class HomeVC: UIViewController {
     let center = UNUserNotificationCenter.current()
     let options: UNAuthorizationOptions = [.alert, .sound];
    
+    ///Initialize the addService
+    /// - parameters:
+    /// delayBetweenScans is 0.5
+    lazy var addDevice: FAAddDeviceService = {
+        let addDevice = FAAddDeviceService()
+        return addDevice
+    }()
+    private let delayBetweenScans = 0.5
+    
+//    var scanViewController: FAScanViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()

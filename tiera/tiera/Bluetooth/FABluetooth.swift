@@ -18,37 +18,37 @@ enum Manager {
 
 // Conform to this protocol to WRITE
 protocol KYBluetoothCentralWritable: class {
-    func bluetooth(_ bluetooth: KYBluetooth, didWriteValueFor characteristic: CBCharacteristic, forPeripheral peripheral: CBPeripheral, error: Error?)
+    func bluetooth(_ bluetooth: FABluetooth, didWriteValueFor characteristic: CBCharacteristic, forPeripheral peripheral: CBPeripheral, error: Error?)
 }
 
 // Conform to this protocol to READ
 protocol KYBluetoothCentralReadable: class {
-    func bluetooth(_ bluetooth: KYBluetooth, didUpdateValueFor characteristic: CBCharacteristic, error: Error?)
+    func bluetooth(_ bluetooth: FABluetooth, didUpdateValueFor characteristic: CBCharacteristic, error: Error?)
 }
 
 // Required bluetooth central protocol
 protocol KYBluetoothCentralDelegate: class {
-    func bluetooth(_ bluetooth: KYBluetooth, didChange state: TieraManagerState)
-    func bluetooth(_ bluetooth: KYBluetooth, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber)
-    func bluetooth(_ bluetooth: KYBluetooth, didConnect peripheral: CBPeripheral)
-    func bluetooth(_ bluetooth: KYBluetooth, didFail peripheral: CBPeripheral)
-    func bluetooth(_ bluetooth: KYBluetooth, didDisconnect peripheral: CBPeripheral, error: Error?)
-    func bluetooth(_ bluetooth: KYBluetooth, didDiscover characteristics:[CBCharacteristic], error: Error?)
+    func bluetooth(_ bluetooth: FABluetooth, didChange state: TieraManagerState)
+    func bluetooth(_ bluetooth: FABluetooth, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber)
+    func bluetooth(_ bluetooth: FABluetooth, didConnect peripheral: CBPeripheral)
+    func bluetooth(_ bluetooth: FABluetooth, didFail peripheral: CBPeripheral)
+    func bluetooth(_ bluetooth: FABluetooth, didDisconnect peripheral: CBPeripheral, error: Error?)
+    func bluetooth(_ bluetooth: FABluetooth, didDiscover characteristics:[CBCharacteristic], error: Error?)
 }
 
 // MARK: - Peripheral Manager Protocols
 protocol KYBluetoothPeripheralDelegate: class {
-    func bluetooth(_ bluetooth: KYBluetooth, didChange state: TieraManagerState)
-    func bluetooth(_ bluetooth: KYBluetooth, didStartAdvertising peripheral: CBPeripheralManager, error: Error?)
-    func bluetooth(_ bluetooth: KYBluetooth, didAdd service: CBService, error: Error?)
-    func bluetooth(_ bluetooth: KYBluetooth, central: CBCentral, didSubscribeTo characteristic: CBCharacteristic)
-    func bluetooth(_ bluetooth: KYBluetooth, central: CBCentral, didUnsubscribeFrom characteristic: CBCharacteristic)
-    func bluetooth(_ bluetooth: KYBluetooth, peripheralManager: CBPeripheralManager, didReceiveRead request: CBATTRequest)
-    func bluetooth(_ bluetooth: KYBluetooth, peripheralManager: CBPeripheralManager, didReceiveWrite requests: [CBATTRequest])
-    func bluetooth(_ bluetooth: KYBluetooth, IsReadyToUpdateSubscribers peripheral: CBPeripheralManager)
+    func bluetooth(_ bluetooth: FABluetooth, didChange state: TieraManagerState)
+    func bluetooth(_ bluetooth: FABluetooth, didStartAdvertising peripheral: CBPeripheralManager, error: Error?)
+    func bluetooth(_ bluetooth: FABluetooth, didAdd service: CBService, error: Error?)
+    func bluetooth(_ bluetooth: FABluetooth, central: CBCentral, didSubscribeTo characteristic: CBCharacteristic)
+    func bluetooth(_ bluetooth: FABluetooth, central: CBCentral, didUnsubscribeFrom characteristic: CBCharacteristic)
+    func bluetooth(_ bluetooth: FABluetooth, peripheralManager: CBPeripheralManager, didReceiveRead request: CBATTRequest)
+    func bluetooth(_ bluetooth: FABluetooth, peripheralManager: CBPeripheralManager, didReceiveWrite requests: [CBATTRequest])
+    func bluetooth(_ bluetooth: FABluetooth, IsReadyToUpdateSubscribers peripheral: CBPeripheralManager)
 }
 
-class KYBluetooth : NSObject
+class FABluetooth : NSObject
 {
     static let State = "state"
     static let StateKey = "stateKey"
@@ -222,7 +222,7 @@ class KYBluetooth : NSObject
 }
 
 // MARK: - CBCentralManagerDelegate
-extension KYBluetooth : CBCentralManagerDelegate
+extension FABluetooth : CBCentralManagerDelegate
 {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         
@@ -245,7 +245,7 @@ extension KYBluetooth : CBCentralManagerDelegate
         }
         
         // Update the views that dont have any relation with Bluetooth
-        NotificationCenter.default.post(name: Notification.Name(KYBluetooth.State), object: nil, userInfo:[ KYBluetooth.StateKey : state ])
+        NotificationCenter.default.post(name: Notification.Name(FABluetooth.State), object: nil, userInfo:[ FABluetooth.StateKey : state ])
         
         // Update handlers/views that have direct connection to Bluetooth (e.g. tap to Connect)
         centralDelegate?.bluetooth(self, didChange: state)
@@ -275,7 +275,7 @@ extension KYBluetooth : CBCentralManagerDelegate
 }
 
 // MARK: - CBPeripheralDelegate
-extension KYBluetooth: CBPeripheralDelegate {
+extension FABluetooth: CBPeripheralDelegate {
     
     // didDiscoverServices
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
@@ -314,7 +314,7 @@ extension KYBluetooth: CBPeripheralDelegate {
     }
 }
 
-extension KYBluetooth{
+extension FABluetooth {
     convenience init (manager: Manager, serviceUUID: CBUUID, characteristicsUUID:[CBUUID], centralDelegate: KYBluetoothCentralDelegate? = nil, peripheralDelegate: KYBluetoothPeripheralDelegate? = nil, writableDelegate: KYBluetoothCentralWritable? = nil, readableDelegate: KYBluetoothCentralReadable? = nil) {
         
         self.init(manager: manager)
@@ -328,7 +328,7 @@ extension KYBluetooth{
     }
 }
 // MARK: - CBPeripheralManagerDelegate
-extension KYBluetooth: CBPeripheralManagerDelegate{
+extension FABluetooth: CBPeripheralManagerDelegate {
     
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         
@@ -351,7 +351,7 @@ extension KYBluetooth: CBPeripheralManagerDelegate{
         }
         
         // Update the views that dont have any relation with Bluetooth
-        NotificationCenter.default.post(name: Notification.Name(KYBluetooth.State), object: nil, userInfo:[ KYBluetooth.StateKey : state ])
+        NotificationCenter.default.post(name: Notification.Name(FABluetooth.State), object: nil, userInfo:[ FABluetooth.StateKey : state ])
         
         // Update handlers/views that have direct connection to Bluetooth (e.g. tap to Connect)
         peripheralDelegate?.bluetooth(self, didChange: state)

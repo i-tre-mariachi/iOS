@@ -27,7 +27,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
 //    var ioc_collarController : KYCollarControllerProtocol!
     
     fileprivate var diagnosticsCharacteristic : CBCharacteristic?
-    private var bluetooth : KYBluetooth?
+    private var bluetooth : FABluetooth?
     var manager: CBCentralManager?
     var currentPeripheral: CBPeripheral?
     var discoveredPeripherals: [CBPeripheral]?
@@ -63,7 +63,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
     //MARK: Connectivity process
     func start(delegate: DiagnosticsServiceProtocol?) {
         self.delegate = delegate
-        bluetooth = KYBluetooth(manager: .centralManager, serviceUUID: serviceUUID, characteristicsUUID: characteristicsUUID, centralDelegate: self, writableDelegate: self, readableDelegate: self)
+        bluetooth = FABluetooth(manager: .centralManager, serviceUUID: serviceUUID, characteristicsUUID: characteristicsUUID, centralDelegate: self, writableDelegate: self, readableDelegate: self)
     }
     
     private func startScanTimer() {
@@ -130,7 +130,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
     }
     
     //MARK: - KYBluetoothCentralDelegate listeners
-    func bluetooth(_ bluetooth: KYBluetooth, didChange state: TieraManagerState) {
+    func bluetooth(_ bluetooth: FABluetooth, didChange state: TieraManagerState) {
         if state == .TieraManagerStatePoweredOn {
             // Process with scanning
             startScan()
@@ -150,7 +150,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
         }
     }
     
-    func bluetooth(_ bluetooth: KYBluetooth, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+    func bluetooth(_ bluetooth: FABluetooth, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         stopScanTimer()
         discoveredPeripherals? = [peripheral] // save a local copy of the peripherals found so CoreBT does not get rid of it
         
@@ -168,7 +168,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
         }
     }
     
-    func bluetooth(_ bluetooth: KYBluetooth, didConnect peripheral: CBPeripheral) {
+    func bluetooth(_ bluetooth: FABluetooth, didConnect peripheral: CBPeripheral) {
         print("DIAGNOSTICS_S: didConnect")
         Thread.sleep(forTimeInterval: 1.0) // This is needed to provide enough time between connection and discover services.
         
@@ -182,13 +182,13 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
         }
     }
     
-    func bluetooth(_ bluetooth: KYBluetooth, didFail peripheral: CBPeripheral) {
+    func bluetooth(_ bluetooth: FABluetooth, didFail peripheral: CBPeripheral) {
         print("DIAGNOSTICS_S: didFail connect to peripheral")
         // Notify KYBT when failed to re-connectToPeripheral
         self.bluetooth?.connectTo(peripheral: peripheral)
     }
     
-    func bluetooth(_ bluetooth: KYBluetooth, didDiscover characteristics:[CBCharacteristic], error: Error?) {
+    func bluetooth(_ bluetooth: FABluetooth, didDiscover characteristics:[CBCharacteristic], error: Error?) {
         // keep this array to use it in other methods
         // that do not obtain all char and it will not require a reconnect
         characteristicsFound = characteristics
@@ -219,7 +219,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
     }
     
     //MARK: - KYBluetoothWritable listeners
-    func bluetooth(_ bluetooth: KYBluetooth, didWriteValueFor characteristic: CBCharacteristic, forPeripheral peripheral: CBPeripheral, error: Error?) {
+    func bluetooth(_ bluetooth: FABluetooth, didWriteValueFor characteristic: CBCharacteristic, forPeripheral peripheral: CBPeripheral, error: Error?) {
         for char in characteristicsFound! {
             if char.uuid == diagnosticsCharacteristicUUID { // A045
                 print("DIAGNOSTICS_S: didWriteValueFor Data char  \(String(describing: characteristic.uuid))")
@@ -234,7 +234,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
     }
     
     //MARK: didUpdateValueForCharacteristic
-    func bluetooth(_ bluetooth: KYBluetooth, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+    func bluetooth(_ bluetooth: FABluetooth, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         print("DIAGNOSTICS_S: didUpdateValueFor for char \(characteristic)")
         guard let data = characteristic.value else {
             print ("DIAGNOSTICS_S: The caracteristics are not 90/46 length ")
@@ -370,7 +370,7 @@ class KYDiagnosticsService: NSObject, KYBluetoothCentralDelegate, KYBluetoothCen
     }
     
     //MARK: Disconnected
-    func bluetooth(_ bluetooth: KYBluetooth, didDisconnect peripheral: CBPeripheral, error: Error?) {
+    func bluetooth(_ bluetooth: FABluetooth, didDisconnect peripheral: CBPeripheral, error: Error?) {
         if didWriteDiagnosticsValue { // use the following in case of an abnormal disc
             print("DIAGNOSTICS_S: didDisconnect - reconnect ")
             self.bluetooth?.connectTo(peripheral: peripheral)
