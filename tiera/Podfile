@@ -10,6 +10,7 @@ pod 'Swinject'
 pod 'ReactiveCocoa'
 pod 'ReactiveSwift'
 pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
+pod 'SVProgressHUD'
 
   target 'tieraTests' do
     inherit! :search_paths

@@ -26,3 +26,12 @@ public let dateTimeFormat = "yyyy-MM-dd HH:mm:ss"
 ///Headers
 
 
+///Alert messages from tiera
+public let outOfBattery = "tiera battery is low and cannot make coffee"
+public let capsuleTrayDamaged = ""
+public let beverageTray = ""
+public let waterTankLow = ""
+public let coffeeCup = ""
+public let dripTray = ""
+
+
