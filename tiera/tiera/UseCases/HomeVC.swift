@@ -324,4 +324,15 @@ extension HomeVC: CBPeripheralDelegate {
     func onSocReceived(soc: Int) {
         
     }
+    
+    
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        print("didDisconnectPeripheral: \(peripheral)")
+    }
+    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+        print("didFailToConnect: \(peripheral)")
+    }
+    func centralManager(_ central: CBCentralManager, willRestoreState dict: [String : Any]) {
+        print("willRestoreState")
+    }
 }
