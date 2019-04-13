@@ -12,6 +12,8 @@ pod 'ReactiveSwift'
 pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
 pod 'SVProgressHUD'
 
+pod 'ReSwift'
+
   target 'tieraTests' do
     inherit! :search_paths
     # Pods for testing

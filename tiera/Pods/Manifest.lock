@@ -7,6 +7,8 @@ PODS:
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.1.0)
+  - ReSwift (4.1.1)
+  - SVProgressHUD (2.2.5)
   - SwiftyUserDefaults (4.0.0-alpha.1)
   - Swinject (2.5.0)
 
@@ -16,6 +18,8 @@ DEPENDENCIES:
   - Quick
   - ReactiveCocoa
   - ReactiveSwift
+  - ReSwift
+  - SVProgressHUD
   - SwiftyUserDefaults (= 4.0.0-alpha.1)
   - Swinject
 
@@ -27,6 +31,8 @@ SPEC REPOS:
     - ReactiveCocoa
     - ReactiveSwift
     - Result
+    - ReSwift
+    - SVProgressHUD
     - SwiftyUserDefaults
     - Swinject
 
@@ -37,9 +43,11 @@ SPEC CHECKSUMS:
   ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  ReSwift: d925be0033558f55bd73d92869961230dfe19d52
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyUserDefaults: cebe0ff9472f52699772a514b6f7155861d8069b
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: 2c889a7fed9bf3f765d86bc147aa387d3a032d41
+PODFILE CHECKSUM: 412483910048fa9dcd1f78ef32c772a4a3375faf
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.0.beta.3
