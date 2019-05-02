@@ -6,4 +6,13 @@
 //  Copyright © 2019 Christos Christodoulou. All rights reserved.
 //
 
-import Foundation
+///There’s only one main Reducer function, but just as with state, reducers should be divided between sub-reducers.
+import ReSwift
+
+func appReducer(action: Action, state: AppState?) -> AppState {
+    return AppState(
+        routingState: routingReducer(action: action, state: state?.routingState),
+        homeState: HomeReducer(action: action, state: state?.homeState)
+    )
+    
+}

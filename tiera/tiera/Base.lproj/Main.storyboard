@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EFA-FG-9eA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EFA-FG-9eA">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,17 +37,6 @@
                                     <action selector="scheduleCoffeeTapped:" destination="Wxs-Mh-Aka" eventType="touchUpInside" id="Qkw-63-fQA"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="udL-v8-qcm">
-                                <rect key="frame" x="135" y="109" width="105" height="29"/>
-                                <segments>
-                                    <segment title="Single"/>
-                                    <segment title="Lungo"/>
-                                </segments>
-                                <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="doseSegmentedControlTapped:" destination="Wxs-Mh-Aka" eventType="valueChanged" id="b0g-8Q-jB3"/>
-                                </connections>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to connect!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWZ-IA-7N5">
                                 <rect key="frame" x="16" y="678" width="343" height="100"/>
                                 <constraints>
@@ -110,6 +99,32 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="udL-v8-qcm">
+                                <rect key="frame" x="94" y="224" width="187" height="29"/>
+                                <segments>
+                                    <segment title="Ristretto"/>
+                                    <segment title="Espresso"/>
+                                    <segment title="Lungo"/>
+                                </segments>
+                                <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="doseSegmentedControlTapped:" destination="Wxs-Mh-Aka" eventType="valueChanged" id="b0g-8Q-jB3"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="battery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4b-dI-hca">
+                                <rect key="frame" x="16" y="109" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="battery date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85A-34-cyA">
+                                <rect key="frame" x="118" y="109" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -121,14 +136,14 @@
                             <constraint firstItem="wrU-yA-dRS" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="163" id="Fld-Zs-Pro"/>
                             <constraint firstItem="tRW-f8-Y2j" firstAttribute="centerX" secondItem="wrU-yA-dRS" secondAttribute="centerX" id="Mkj-AL-yP7"/>
                             <constraint firstItem="i2g-NP-kN4" firstAttribute="trailing" secondItem="rWZ-IA-7N5" secondAttribute="trailing" constant="16" id="OdI-GY-ces"/>
-                            <constraint firstItem="udL-v8-qcm" firstAttribute="top" secondItem="i2g-NP-kN4" secondAttribute="top" constant="21" id="U94-X9-dZj"/>
-                            <constraint firstItem="i2g-NP-kN4" firstAttribute="trailing" secondItem="udL-v8-qcm" secondAttribute="trailing" constant="135" id="Wik-mV-dlL"/>
+                            <constraint firstItem="udL-v8-qcm" firstAttribute="top" secondItem="i2g-NP-kN4" secondAttribute="top" constant="136" id="U94-X9-dZj"/>
+                            <constraint firstItem="i2g-NP-kN4" firstAttribute="trailing" secondItem="udL-v8-qcm" secondAttribute="trailing" constant="94" id="Wik-mV-dlL"/>
                             <constraint firstItem="iIE-T8-2Ll" firstAttribute="baseline" secondItem="ZYJ-Rb-Joc" secondAttribute="baseline" id="Wz4-UB-GJy"/>
                             <constraint firstItem="i2g-NP-kN4" firstAttribute="bottom" secondItem="rWZ-IA-7N5" secondAttribute="bottom" id="gvF-NC-oHA"/>
                             <constraint firstItem="iIE-T8-2Ll" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="59" id="nKd-oe-jiY"/>
                             <constraint firstItem="i2g-NP-kN4" firstAttribute="trailing" secondItem="ZYJ-Rb-Joc" secondAttribute="trailing" constant="60" id="pE7-M0-hMz"/>
                             <constraint firstItem="rWZ-IA-7N5" firstAttribute="centerX" secondItem="i2g-NP-kN4" secondAttribute="centerX" id="pV9-2F-XFU"/>
-                            <constraint firstItem="udL-v8-qcm" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="135" id="rTp-fB-alo"/>
+                            <constraint firstItem="udL-v8-qcm" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="94" id="rTp-fB-alo"/>
                             <constraint firstItem="rWZ-IA-7N5" firstAttribute="leading" secondItem="i2g-NP-kN4" secondAttribute="leading" constant="16" id="rjU-Ct-nwQ"/>
                             <constraint firstItem="udL-v8-qcm" firstAttribute="centerX" secondItem="i2g-NP-kN4" secondAttribute="centerX" id="u1T-4j-wme"/>
                             <constraint firstItem="ZYJ-Rb-Joc" firstAttribute="leading" secondItem="iIE-T8-2Ll" secondAttribute="trailing" constant="8" symbolic="YES" id="v2I-cF-uSA"/>
@@ -139,6 +154,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="tiera" id="91U-iU-pNZ"/>
                     <connections>
+                        <outlet property="batteryDateLabel" destination="85A-34-cyA" id="bke-Lh-dJP"/>
+                        <outlet property="batteryLevelLabel" destination="g4b-dI-hca" id="DHC-FW-hGQ"/>
                         <outlet property="doseSegmentedControl" destination="udL-v8-qcm" id="mia-NP-TeV"/>
                         <outlet property="prepareCoffeeButton" destination="iIE-T8-2Ll" id="a9L-Vh-B8y"/>
                         <outlet property="progressLabel" destination="rWZ-IA-7N5" id="fZ0-7x-nig"/>

@@ -12,11 +12,15 @@ import UserNotifications
 import tieraCommon
 import tieraViewModel
 
+import ReSwift
+
 import CoreBluetooth//TODO: move to the implementation when is done
 
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var batteryDateLabel: UILabel!
+    @IBOutlet weak var batteryLevelLabel: UILabel!
     @IBOutlet weak var doseSegmentedControl: UISegmentedControl!
     @IBOutlet weak var stopCoffeeButton: UIButton!
     @IBOutlet weak var startCoffeeButton: FARoundedButton!
@@ -38,6 +42,9 @@ class HomeVC: UIViewController {
     
 //    var scanViewController: FAScanViewController?
     
+    // 1 - acts as a declarative data source
+    var tableDataSource: TableDataSource<UITableViewCell, String>?
+    
     ///init ViewModel
     private var homeViewModel: HomeViewModel!
     
@@ -58,6 +65,22 @@ class HomeVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         scheduledLocalNotification()
+        
+        // 2
+        store.subscribe(self) {
+            $0.select {
+                $0.homeState
+            }
+        }
+        
+        /// Updating the State (This updates the store manually if the navigation back arrow was used)
+        store.dispatch(RoutingAction(destination: .home))
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // 3
+        store.unsubscribe(self)
     }
     
     func setupDefaultValues() {
@@ -190,14 +213,18 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func doseSegmentedControlTapped(_ sender: Any) {
-        if Defaults[.coffeeDose] == singleDoseUnit {
-            Defaults[.coffeeDose] = lungoDoseUnit
-        } else {
+        ///TODO: check which one is tapped otherwise take the default one.
+        if Defaults[.coffeeDose] == ristrettoDoseUnit {
+            Defaults[.coffeeDose] = ristrettoDoseUnit
+        } else if Defaults[.coffeeDose] == singleDoseUnit {
             Defaults[.coffeeDose] = singleDoseUnit
+        } else {
+            Defaults[.coffeeDose] = lungoDoseUnit
         }
     }
     
     ///TODO: Bluetooth Implementation to be move to another ViewController
+    /// Bluetooth related implementation
     private func setupBT() {
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
@@ -209,6 +236,7 @@ class HomeVC: UIViewController {
     }
     
 }
+
 
 extension HomeVC: CBCentralManagerDelegate {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
@@ -336,3 +364,32 @@ extension HomeVC: CBPeripheralDelegate {
         print("willRestoreState")
     }
 }
+
+
+// MARK: - StoreSubscriber
+extension HomeVC: StoreSubscriber {
+    func newState(state: HomeState) {
+        // 4
+        tableDataSource = TableDataSource(cellIdentifier:"TitleCell", models: state.homeTitles) {cell, model in
+            cell.textLabel?.text = model
+            cell.textLabel?.textAlignment = .center
+            return cell
+        }
+        
+//        tableView.dataSource = tableDataSource
+//        tableView.reloadData()
+    }
+}
+
+//extension HomeVC: UITableViewDelegate {
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        var routeDestination: RoutingDestination = .home
+//        switch(indexPath.row) {
+//        case 0: routeDestination = .home
+//        case 1: routeDestination = .schedule
+//        default: break
+//        }
+//
+//        store.dispatch(RoutingAction(destination: routeDestination))
+//    }
+//}

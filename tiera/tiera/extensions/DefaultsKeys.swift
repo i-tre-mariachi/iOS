@@ -20,4 +20,7 @@ extension DefaultsKeys {
     static let coffeePreparationCounter = DefaultsKey<Int>("coffeePreparationCounter")
 
     static let coffeeDose = DefaultsKey<String>("coffeeDose")
+    
+    static let batteryLevel = DefaultsKey<String>("batteryLevel") //The battery level and the date that was last measured it
+    static let batteryLevelDate = DefaultsKey<String>("batteryLevelDate")
 }

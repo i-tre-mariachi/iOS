@@ -10,6 +10,10 @@ import UIKit
 import CoreData
 import UserNotifications
 import SwiftyUserDefaults
+import ReSwift
+
+/// There’s only one Store in the app, and it has only one main Reducer
+var store = Store<AppState>(reducer: appReducer, state: nil)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,13 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let notificationDelegate = FANotificationDelegate()
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let center = UNUserNotificationCenter.current()
         center.delegate = notificationDelegate
         
-        if Defaults[.isFirstLaunch] == true {
+        if Defaults[.isFirstLaunch] == true { //TODO: not sure how this will work the initial time debug it with a fresh app, check else
             Defaults[.isFirstLaunch] = false
         }
         
